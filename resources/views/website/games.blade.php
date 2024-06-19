@@ -181,10 +181,10 @@
 
                             </div>
                             <div class="trendingNft__item-image">
-                                <a href="The_Pass.html"><img src="assets/img/Game/the_passage/1-second-size.png" alt="img"></a>
+                                <a href="{{route('pass')}}"><img src="assets/img/Game/the_passage/1-second-size.png" alt="img"></a>
                             </div>
                             <div class="trendingNft__item-bottom" style="display: block">
-                                <a href="The_Pass.html" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="{{route('pass')}}" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -200,10 +200,10 @@
 
                             </div>
                             <div class="trendingNft__item-image">
-                                <a href="ithraa.html"><img src="assets/img/Game/ithraa/1-second.png" alt="img"></a>
+                                <a href="{{route('ithraa')}}"><img src="assets/img/Game/ithraa/1-second.png" alt="img"></a>
                             </div>
                             <div class="trendingNft__item-bottom" style="display: block">
-                                <a href="ithraa.html" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="{{route('ithraa')}}" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -219,10 +219,10 @@
 
                             </div>
                             <div class="trendingNft__item-image">
-                                <a href="Abjadiyat.html"><img src="assets/img/Game/abjadyat/1-second.png" alt="img"></a>
+                                <a href="{{route('abjadiyat')}}"><img src="assets/img/Game/abjadyat/1-second.png" alt="img"></a>
                             </div>
                             <div class="trendingNft__item-bottom" style="display: block">
-                                <a href="Abjadiyat.html" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="{{route('abjadiyat')}}" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -238,10 +238,10 @@
 
                             </div>
                             <div class="trendingNft__item-image">
-                                <a href="Pharmlator.html"><img src="assets/img/Game/phar/1-second-size.png" alt="img"></a>
+                                <a href="{{route('pharmlator')}}"><img src="assets/img/Game/phar/1-second-size.png" alt="img"></a>
                             </div>
                             <div class="trendingNft__item-bottom" style="display: block">
-                                <a href="Pharmlator.html" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="{{route('pharmlator')}}" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -257,10 +257,10 @@
 
                             </div>
                             <div class="trendingNft__item-image">
-                                <a href="Secrets.html"><img src="assets/img/Game/secret/1-350-240.png" alt="img"></a>
+                                <a href="{{route('secrets')}}"><img src="assets/img/Game/secret/1-350-240.png" alt="img"></a>
                             </div>
                             <div class="trendingNft__item-bottom" style="display: block">
-                                <a href="Secrets.html" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="{{route('secrets')}}" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -276,10 +276,10 @@
 
                             </div>
                             <div class="trendingNft__item-image">
-                                <a href="color.html"><img src="assets/img/Game/color/1-350.png" alt="img"></a>
+                                <a href="{{route('color')}}"><img src="assets/img/Game/color/1-350.png" alt="img"></a>
                             </div>
                             <div class="trendingNft__item-bottom" style="display: block">
-                                <a href="color.html" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="{{route('color')}}" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -296,10 +296,10 @@
 
                             </div>
                             <div class="trendingNft__item-image">
-                                <a href="Impulse.html"><img src="assets/img/Game/impluse/1-350.png" alt="img"></a>
+                                <a href="{{route('impulse')}}"><img src="assets/img/Game/impluse/1-350.png" alt="img"></a>
                             </div>
                             <div class="trendingNft__item-bottom" style="display: block">
-                                <a href="Impulse.html" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="{{route('impulse')}}" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -316,10 +316,10 @@
 
                             </div>
                             <div class="trendingNft__item-image">
-                                <a href="puppy.html"><img src="assets/img/Game/puppy/1-350.png" alt="img"></a>
+                                <a href="{{route('puppy')}}"><img src="assets/img/Game/puppy/1-350.png" alt="img"></a>
                             </div>
                             <div class="trendingNft__item-bottom" style="display: block">
-                                <a href="puppy.html" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="{{route('puppy')}}" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -336,10 +336,10 @@
 
                             </div>
                             <div class="trendingNft__item-image">
-                                <a href="skull.html"><img src="assets/img/Game/skull/1-350.png" alt="img"></a>
+                                <a href="{{route('skull')}}"><img src="assets/img/Game/skull/1-350.png" alt="img"></a>
                             </div>
                             <div class="trendingNft__item-bottom" style="display: block">
-                                <a href="skull.html" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="{{route('skull')}}" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -355,10 +355,10 @@
 
                             </div>
                             <div class="trendingNft__item-image">
-                                <a href="BeytiBee.html"><img src="assets/img/Game/Byte/Bg2.png" alt="img"></a>
+                                <a href="{{route('beyti-bee')}}"><img src="assets/img/Game/Byte/Bg2.png" alt="img"></a>
                             </div>
                             <div class="trendingNft__item-bottom" style="display: block">
-                                <a href="BeytiBee.html" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
+                                <a href="{{route('beyti-bee')}}" style="text-align: center; display: block" class="bid-btn"> More Information <i class="fas fa-long-arrow-alt-right"></i></a>
                             </div>
                         </div>
                     </div>
