@@ -17,8 +17,11 @@ Route::group(['prefix' => 'admin'], function () {
         })->name('dashboard');
     });
 
-    Route::get('contact-us',[ContactusController::class,'index'])->name('dashboard.contact-us');
-    Route::get('contact-us/{contactus}/make-reply',[ContactusController::class,'reply'])->name('dashboard.make-reply');
+    Route::get('contact-us',[ContactusController::class,'index'])
+        ->name('dashboard.contact-us');
+
+    Route::get('contact-us/{contactus}/make-reply',[ContactusController::class,'reply'])
+        ->name('dashboard.make-reply');
 
 
 });
