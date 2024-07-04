@@ -45,23 +45,44 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-10">
+                        @if(session('success'))
+                            <div class="alert alert-success">
+                                {{session('success')}}
+                            </div>
+                        @endif
                         <div class="contact__form-wrap">
-                            <form id="contact-form" action="https://themedox.com/demo/mykd/assets/mail.php" method="POST">
+                            <form id="contact-form" action="{{route('contact-us')}}" method="POST">
+                                @csrf
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="input-grp">
                                             <input name="name" type="text" placeholder="Name *" required>
                                         </div>
+                                        @error('name')
+                                            <div class="alert alert-danger">
+                                                {{$message}}
+                                            </div>
+                                        @enderror
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="input-grp">
                                             <input name="email" type="email" placeholder="Email *" required>
                                         </div>
+                                        @error('email')
+                                        <div class="alert alert-danger">
+                                            {{$message}}
+                                        </div>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="input-grp message-grp">
                                     <textarea name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
                                 </div>
+                                @error('message')
+                                <div class="alert alert-danger">
+                                    {{$message}}
+                                </div>
+                                @enderror
                                 <button class="submit-btn">Submit Now</button>
                             </form>
                             <p class="ajax-response"></p>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactusController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -122,3 +123,5 @@ Route::get('/skull', function () {
 Route::get('/srip', function () {
     return view('website.srip');
 })->name('srip');
+
+Route::post('contact-us',[ContactusController::class,'store'])->name('contact-us');
