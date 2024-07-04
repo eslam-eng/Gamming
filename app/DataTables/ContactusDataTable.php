@@ -22,7 +22,9 @@ class ContactusDataTable extends DataTable
             ->setRowId('id')
             ->editColumn('is_replied',fn(Contactus $contactus)=>$contactus->is_replied ? 'replied' : 'not replied')
             ->editColumn('created_at',fn(Contactus $contactus)=>$contactus->created_at->diffForHumans())
-            ->addColumn('action', 'contactus.action');
+            ->addColumn('action', function (Contactus $contactus){
+                return view('dashboard.pages.contactus.components.actions',compact('contactus'));
+            });
     }
 
     /**

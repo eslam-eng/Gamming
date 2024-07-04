@@ -11,6 +11,11 @@
             <div class="card custom-card">
                 <div class="card-body">
                     <div class="table-responsive">
+                        @if(session('success'))
+                            <div class="alert alert-success">
+                                {{session('success')}}
+                            </div>
+                        @endif
                         {!! $dataTable->table(['class' => 'table-data table table-bordered text-nowrap border-bottom']) !!}
                     </div>
                 </div>
