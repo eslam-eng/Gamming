@@ -35,11 +35,11 @@
                                href="{{route('dashboard.contact-us')}}">Contact-us</a>
                         </li>
 
-                        <li>
-                            <a class="slide-item"
+{{--                        <li>--}}
+{{--                            <a class="slide-item"--}}
 {{--                               data-is_active="{{request()->fullUrlIs(route('therapist-lectures.index').'?upcoming=1')}}"--}}
-                               href="#">@lang('app.lectures.upcoming_lectures')</a>
-                        </li>
+{{--                               href="#">@lang('app.lectures.upcoming_lectures')</a>--}}
+{{--                        </li>--}}
                     </ul>
                 </li>
 
