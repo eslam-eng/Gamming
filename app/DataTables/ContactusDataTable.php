@@ -20,6 +20,9 @@ class ContactusDataTable extends DataTable
     {
         return (new EloquentDataTable($query))
             ->setRowId('id')
+            ->editColumn('email', function (Contactus $contactus){
+                return view('dashboard.pages.contactus.components.mail-to-url',compact('contactus'));
+            })
             ->editColumn('is_replied',fn(Contactus $contactus)=>$contactus->is_replied ? 'replied' : 'not replied')
             ->editColumn('created_at',fn(Contactus $contactus)=>$contactus->created_at->diffForHumans())
             ->addColumn('action', function (Contactus $contactus){
