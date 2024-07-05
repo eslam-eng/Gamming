@@ -5,11 +5,11 @@
 		<link href="{{asset('assets/dashboard/plugins/icons/icons.css')}}" rel="stylesheet">
 
 		<!-- BOOTSTRAP CSS -->
-        @if(auth()->user()->locale=='en')
+{{--        @if(auth()->user()->locale=='en')--}}
             <link href="{{asset('assets/dashboard/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" />
-        @else
-            <link href="{{asset('assets/dashboard/plugins/bootstrap/css/bootstrap.rtl.css')}}">
-        @endif
+{{--        @else--}}
+{{--            <link href="{{asset('assets/dashboard/plugins/bootstrap/css/bootstrap.rtl.css')}}">--}}
+{{--        @endif--}}
 
 		<!-- RIGHT-SIDEMENU CSS -->
 		<link href="{{asset('assets/dashboard/plugins/sidebar/sidebar.css')}}" rel="stylesheet">
