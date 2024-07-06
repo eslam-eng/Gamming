@@ -15,13 +15,19 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/',function (){
             return view('dashboard.pages.home');
         })->name('dashboard');
+
+
+        Route::get('contact-us',[ContactusController::class,'index'])
+            ->name('dashboard.contact-us');
+
+        Route::get('contact-us/{contactus}/make-reply',[ContactusController::class,'reply'])
+            ->name('dashboard.make-reply');
+
+        Route::get('export-excel', [ContactusController::class, 'export'])->name('export-excel');
+        Route::get('logout', [AuthController::class, 'logout'])->name('logout');
     });
 
-    Route::get('contact-us',[ContactusController::class,'index'])
-        ->name('dashboard.contact-us');
 
-    Route::get('contact-us/{contactus}/make-reply',[ContactusController::class,'reply'])
-        ->name('dashboard.make-reply');
 
 
 });

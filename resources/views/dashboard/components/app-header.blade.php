@@ -44,16 +44,18 @@
 											<div class="dropdown-menu">
 												<div class="menu-header-content p-3 border-bottom">
 													<div class="d-flex wd-100p">
-														<div class="main-img-user"><img alt="" src="#" class=""></div>
+														<div class="main-img-user">
+                                                            <img alt="" src="{{asset('assets/avatar.png')}}" class="">
+                                                        </div>
 														<div class="ms-3 my-auto">
 															<h6 class="tx-15 font-weight-semibold mb-0">{{auth()->user()->name}}</h6>
 														</div>
 													</div>
 												</div>
-												<a class="dropdown-item" href="#"><i class="far fa-user-circle"></i>profile</a>
+{{--												<a class="dropdown-item" href="#"><i class="far fa-user-circle"></i>profile</a>--}}
 {{--												<a class="dropdown-item" href="{{route('language.change',auth()->user()->locale == 'en' ? 'ar':'en')}}"><i class="fa fa-globe"></i>--}}
 {{--                                                    {{auth()->user()->locale == 'en' ? 'العربية' : 'English'}}</a>--}}
-{{--												<a class="dropdown-item" href="{{route('logout')}}"><i class="far fa-arrow-alt-circle-left"></i>{{ __('auth.Sign Out') }}</a>--}}
+												<a class="dropdown-item" href="{{route('logout')}}"><i class="far fa-arrow-alt-circle-left"></i>sign out</a>
 											</div>
 										</li>
 									</ul>

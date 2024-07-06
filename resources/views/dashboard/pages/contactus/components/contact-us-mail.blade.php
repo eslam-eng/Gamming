@@ -1,17 +1,47 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="x-apple-disable-message-reformatting"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="color-scheme" content="light dark"/>
-    <meta name="supported-color-schemes" content="light dark"/>
-    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .header {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .footer {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-<body>
-<p>{{ $content }}</p>
-</body>
+<div class="container">
+    <div class="header">2024studios</div>
+    <div class="content">
+        <p><strong>Name:</strong> {{$contact->name}}</p>
+        <p><strong>Email:</strong> <a href="mailto:{{$contact->email}}">{{$contact->email}}</a></p>
+        <p><strong style="padding-left: 5px;">Message:</strong>{{$contact->message}}</p>
+    </div>
+    <div class="footer">
+        <p>Thanks,<br>
+            <strong>2024studios</strong></p>
+    </div>
+</div>
 </body>
 </html>

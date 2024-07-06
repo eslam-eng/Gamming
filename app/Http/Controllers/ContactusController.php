@@ -17,13 +17,18 @@ class ContactusController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'message' => 'required|string',
-        ]);
-        $contact = Contactus::create($request->except('_token'));
-        Mail::to($this->mail_to)->send(new ContactusMail($contact,$contact->email));
-        return back()->with('success', 'Thanks for contacting us!');
+        try {
+            $request->validate([
+                'name' => 'required',
+                'email' => 'required|email',
+                'message' => 'required|string',
+            ]);
+            $contact = Contactus::create($request->except('_token'));
+            Mail::to('info@2024studios.com')
+                ->send(new ContactusMail($contact,$contact->email));
+            return back()->with('success', 'Thanks for contacting us!');
+        }catch (\Exception $exception){
+            return back()->with('success', 'Thanks for contacting us!');
+        }
     }
 }

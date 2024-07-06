@@ -16,6 +16,7 @@
                                 {{session('success')}}
                             </div>
                         @endif
+                        <a class="btn btn-success" href="{{route('export-excel')}}">export excel</a>
                         {!! $dataTable->table(['class' => 'table-data table table-bordered text-nowrap border-bottom']) !!}
                     </div>
                 </div>

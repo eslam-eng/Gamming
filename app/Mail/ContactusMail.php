@@ -17,10 +17,10 @@ class ContactusMail extends Mailable
      * Create a new message instance.
      */
     public $from_mail;
-    public $content;
-    public function __construct(string $content,$from_mail)
+    public $contact;
+    public function __construct($content,$from_mail)
     {
-        $this->content = $content;
+        $this->contact = $content;
         $this->from_mail = $from_mail;
     }
 
@@ -30,8 +30,7 @@ class ContactusMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: $this->from_mail,
-            subject: 'Contactus',
+            subject: 'Contactus-form-'.$this->contact?->name
         );
     }
 
